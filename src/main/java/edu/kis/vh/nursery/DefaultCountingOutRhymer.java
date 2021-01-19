@@ -5,7 +5,7 @@ public class DefaultCountingOutRhymer {
 	public static final int TAB_SIZE = 12;
 	private int[] numbers = new int[TAB_SIZE];
 
-	public static int total = -1;
+	private static int total = -1;
 
 	public void countIn(int in) {
 		if (!isFull())
