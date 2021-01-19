@@ -36,8 +36,4 @@ public class DefaultCountingOutRhymer {
 		return numbers[total--];
 	}
 
-	public static int getTabSize() {
-		return TAB_SIZE;
-	}
-
 }

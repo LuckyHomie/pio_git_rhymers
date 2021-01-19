@@ -17,8 +17,5 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 		return ret;
 	}
 
-	public DefaultCountingOutRhymer getDefaultCountingOutRhymer() {
-		return defaultCountingOutRhymer;
-	}
 }
 //alt + -> i alt + <- pozwala na przełączanie pomiędzy otwartymi plikami
