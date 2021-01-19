@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	public static final int TAB_SIZE = 12;
+	private static final int TAB_SIZE = 12;
 	private int[] numbers = new int[TAB_SIZE];
 
 	private static int total = -1;
@@ -34,6 +34,10 @@ public class DefaultCountingOutRhymer {
 		if (callCheck())
 			return -1;
 		return numbers[total--];
+	}
+
+	public static int getTabSize() {
+		return TAB_SIZE;
 	}
 
 }

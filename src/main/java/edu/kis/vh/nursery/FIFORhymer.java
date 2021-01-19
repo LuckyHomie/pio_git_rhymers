@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {
 	
-	public final DefaultCountingOutRhymer defaultCountingOutRhymer = new DefaultCountingOutRhymer();
+	private final DefaultCountingOutRhymer defaultCountingOutRhymer = new DefaultCountingOutRhymer();
 	
 	@Override
 	public int countOut() {
@@ -15,6 +15,10 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 			countIn(defaultCountingOutRhymer.countOut());
 		
 		return ret;
+	}
+
+	public DefaultCountingOutRhymer getDefaultCountingOutRhymer() {
+		return defaultCountingOutRhymer;
 	}
 }
 //alt + -> i alt + <- pozwala na przełączanie pomiędzy otwartymi plikami
